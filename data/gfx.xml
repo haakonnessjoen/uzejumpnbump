@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<gfx-xform version="1">
+    <input file="bunny.png" type="png" tile-width="8" tile-height="8" />
+    <output file="bunnytiles.inc">
+        <tiles var-name="bunnytiles"/>
+        <maps pointers-size="8">
+	    <map var-name="map_bunnyidle" left="0" top="0" width="2" height="2"/>
+	    <map var-name="map_bunnywalk1" left="2" top="0" width="2" height="2"/>
+	    <map var-name="map_bunnywalk2" left="4" top="0" width="2" height="2"/>
+	    <map var-name="map_bunnywalk3" left="6" top="0" width="2" height="2"/>
+	    <map var-name="map_bunnyjump" left="8" top="0" width="2" height="2"/>
+	    <map var-name="map_bunnyfly" left="10" top="0" width="2" height="2"/>
+	    <map var-name="map_bunnyland" left="12" top="0" width="2" height="2"/>
+	    <map var-name="map_bunnyblink" left="14" top="0" width="2" height="2"/>
+	    <map var-name="map_bunnysquash" left="16" top="0" width="2" height="2"/>
+	    <map var-name="map_bunnyidle2" left="0" top="2" width="2" height="2"/>
+	    <map var-name="map_bunnywalk21" left="2" top="2" width="2" height="2"/>
+	    <map var-name="map_bunnywalk22" left="4" top="2" width="2" height="2"/>
+	    <map var-name="map_bunnywalk23" left="6" top="2" width="2" height="2"/>
+	    <map var-name="map_bunnyjump2" left="8" top="2" width="2" height="2"/>
+	    <map var-name="map_bunnyfly2" left="10" top="2" width="2" height="2"/>
+	    <map var-name="map_bunnyland2" left="12" top="2" width="2" height="2"/>
+	    <map var-name="map_bunnyblink2" left="14" top="2" width="2" height="2"/>
+	    <map var-name="map_bunnysquash2" left="16" top="2" width="2" height="2"/>
+	    <map var-name="map_blood1" left="0" top="4" width="1" height="1"/>
+	    <map var-name="map_blood2" left="1" top="4" width="1" height="1"/>
+	    <map var-name="map_blood3" left="2" top="4" width="1" height="1"/>
+	    <map var-name="map_blood4" left="3" top="4" width="1" height="1"/>
+	</maps>	
+    </output>
+</gfx-xform>

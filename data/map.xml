@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<gfx-xform version="1">
+    <input file="level3.png" type="png" tile-width="8" tile-height="8" />
+    <output file="bunnymap.inc">
+        <tiles var-name="bunnymap"/>
+        <maps pointers-size="8">
+		<map var-name="map_level" left="0" top="0" width="52" height="26"/>
+		<map var-name="bunnyhud" left="0" top="26" width="28" height="4"/>
+		<map var-name="font1" left="28" top="26" width="10" height="2"/>
+		<map var-name="font2" left="28" top="28" width="10" height="1"/>
+	</maps>	
+    </output>
+</gfx-xform>

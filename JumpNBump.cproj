@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.1</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ProjectGuid>6579982e-3646-4f0b-b43d-891b77cc5ae8</ProjectGuid>
+    <Name>JumpNBump</Name>
+    <avrdevice>atmega644</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <AvrProjectType>Importer</AvrProjectType>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>SpriteDemo</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <ToolchainFlavour>WinAVR</ToolchainFlavour>
+    <avrtool />
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress />
+    <UncachedRange />
+    <OverrideVtorValue />
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>1</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.9.1" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'default' ">
+    <OutputPath>bin\default\</OutputPath>
+    <ToolchainSettings>
+      <AvrGcc xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>F_CPU=28636360UL</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.optimization.level>Optimize most (-O3)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.warnings.AllWarnings>true</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-gdwarf-2 -std=gnu99 -fsigned-char</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.assembler.general.AssemblerFlags>-Wall -gdwarf-2 -std=gnu99                                          -DF_CPU=28636360UL -O3 -fsigned-char</avrgcc.assembler.general.AssemblerFlags>
+      </AvrGcc>
+    </ToolchainSettings>
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>default</OutputDirectory>
+    <ExternalMakeFilePath>default\Makefile</ExternalMakeFilePath>
+    <BuildTarget>all</BuildTarget>
+    <CleanTarget>clean</CleanTarget>
+  </PropertyGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\work\uzebox\sources\trunk\demos\kernel\defines.h">
+      <SubType>compile</SubType>
+      <Link>defines.h</Link>
+    </Compile>
+    <Compile Include="jumpnbump.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="..\..\..\..\..\work\uzebox\sources\trunk\demos\kernel\uzeboxVideoEngineCore.s">
+      <SubType>compile</SubType>
+      <Link>uzeboxVideoEngineCore.s</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\work\uzebox\sources\trunk\demos\kernel\fat.c">
+      <SubType>compile</SubType>
+      <Link>fat.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\work\uzebox\sources\trunk\demos\kernel\gui.c">
+      <SubType>compile</SubType>
+      <Link>gui.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\work\uzebox\sources\trunk\demos\kernel\mmc.s">
+      <SubType>compile</SubType>
+      <Link>mmc.s</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\work\uzebox\sources\trunk\demos\kernel\uart.c">
+      <SubType>compile</SubType>
+      <Link>uart.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\work\uzebox\sources\trunk\demos\kernel\uzeboxcore.c">
+      <SubType>compile</SubType>
+      <Link>uzeboxcore.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\work\uzebox\sources\trunk\demos\kernel\uzeboxSoundEngine.c">
+      <SubType>compile</SubType>
+      <Link>uzeboxSoundEngine.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\work\uzebox\sources\trunk\demos\kernel\uzeboxSoundEngineCore.s">
+      <SubType>compile</SubType>
+      <Link>uzeboxSoundEngineCore.s</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\work\uzebox\sources\trunk\demos\kernel\uzeboxVideoEngine.c">
+      <SubType>compile</SubType>
+      <Link>uzeboxVideoEngine.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\work\uzebox\sources\trunk\demos\kernel\videoMode3\videoMode3.c">
+      <SubType>compile</SubType>
+      <Link>videoMode3.c</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\..\work\uzebox\sources\trunk\demos\kernel\videoMode3\videoMode3core.s">
+      <SubType>compile</SubType>
+      <Link>videoMode3core.s</Link>
+    </Compile>
+  </ItemGroup>
+</Project>
