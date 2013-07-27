@@ -3,11 +3,12 @@
 ###############################################################################
 
 ## General Flags
-PROJECT = SuperMarioDemo
-GAME = SuperMarioDemo
+PROJECT = JumpNBump
+GAME = JumpNBump
 MCU = atmega644
 TARGET = $(GAME).elf
 CC = avr-gcc
+UZEBIN_DIR = ../../../tools/bin/
 INFO=../gameinfo.properties
 
 ## Kernel settings
@@ -75,7 +76,7 @@ uzeboxVideoEngine.o: $(KERNEL_DIR)/uzeboxVideoEngine.c
 	$(CC) $(INCLUDES) $(CFLAGS) -c  $<
 
 ## Compile game sources
-$(GAME).o: ../SuperMarioDemo.c
+$(GAME).o: ../jumpnbump.c
 	$(CC) $(INCLUDES) $(CFLAGS) -c  $<
 
 ##Link
